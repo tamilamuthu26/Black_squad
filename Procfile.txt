@@ -1,1 +1,1 @@
-web gunicorn blacksquad.wsgi
+echo "web: gunicorn blacksquad.wsgi:application" > Procfile

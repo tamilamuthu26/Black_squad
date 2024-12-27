@@ -111,7 +111,8 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-ALLOWED_HOSTS = ['blacksquad.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
+
 
 
 # Ensure your server knows to serve media files

@@ -1,0 +1,107 @@
+/* General Styling for Member Detail Page */
+.member-detail {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.member-detail img {
+  width: 50%; /* Ensure the image occupies full width of its container */
+  height: 100%; /* Ensure the image stretches to match the fixed height */
+  object-fit: cover; /* Ensure the image fills the space without distortion */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0;
+}
+
+/* Ensure the row doesn't have gaps between the image and text sections */
+.member-detail .row {
+  display: flex;
+  justify-content: flex-start; /* Ensure the content aligns properly */
+  gap: 0; /* Remove any gap between the columns */
+}
+
+.member-detail .col-md-4, .member-detail .col-md-8 {
+  padding: 30px; /* Remove extra padding */
+}
+
+/* Fixed size for the image and text container */
+.member-detail .col-md-4 {
+  max-width: 35%; /* Adjust the width of the image section */
+  flex: 0 0 35%; /* Make the image section a fixed size */
+}
+
+.member-detail .col-md-8 {
+  max-width: 65%; /* Adjust the width of the text section */
+  flex: 0 0 65%; /* Make the text section a fixed size */
+}
+
+.member-detail h2 {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.member-detail h3 {
+  font-size: 1.75rem;
+  color: #007bff;
+  margin-top: 15px;
+}
+
+.member-detail p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.member-detail p strong {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Button Styling */
+.btn-secondary {
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+  background-color: #0056b3;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .member-detail {
+      padding: 20px; /* Reduce padding on small screens */
+  }
+
+  .member-detail img {
+      max-width: 100%; /* Ensure image fills the container */
+      margin-bottom: 15px;
+  }
+
+  .member-detail .col-md-4, .member-detail .col-md-8 {
+      max-width: 100%; /* Ensure both sections take full width on small screens */
+      flex: 0 0 100%;
+  }
+
+  .member-detail h2 {
+      font-size: 2rem;
+  }
+
+  .member-detail p {
+      font-size: 1rem;
+  }
+
+  iframe {
+      width: 100%;
+      height: auto;
+  }
+}
